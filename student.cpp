@@ -25,7 +25,14 @@ double student::getScore()
         count ++;
     }
 
+    if(count == 0)
+    {
+        average = 0;
+    }
+    else
+    {
     average = grade/count;
+    }
     return average;
 }
 void student::addGrade(int value)
